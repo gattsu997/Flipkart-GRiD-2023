@@ -1,0 +1,25 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./component/Navbar";
+ // Importing pages
+import AiChatPage from "./component/AiChatPage";
+import TrendsPage from "./component/TrendsPage";
+import RecommendationsPage from "./component/RecommendationsPage";
+
+const App = () => {
+  return (
+    <Router>
+      <div className="app-container">
+        <Navbar />
+
+        <Switch>
+          <Route path="/ai-chat" component={AiChatPage} />
+          <Route path="/trends" component={TrendsPage} />
+          <Route path="/recommendations" component={RecommendationsPage} />
+        </Switch>
+      </div>
+    </Router>
+  );
+};
+
+export default App;

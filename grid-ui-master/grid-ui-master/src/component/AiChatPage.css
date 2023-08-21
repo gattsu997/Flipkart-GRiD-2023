@@ -1,0 +1,15 @@
+  .app-container {
+    width: 100%;
+    position: relative;
+  }
+  
+  .content-container {
+    display: flex;
+    margin-top: 3px; /* Adjust this value based on your Navbar's height */
+    border: 2px solid #d0e1ff; /* Orange border color */
+    border-radius: 12px;
+    height: 650px;
+    background-color: rgb(209, 233, 255);
+    padding:6px;
+  }
+  
